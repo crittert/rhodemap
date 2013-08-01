@@ -40,7 +40,7 @@
     $(document).ready(function() {
 
       $('#nav-bttn').click(function(){
-        $('#sidebar-nav').toggleClass('expose');
+        $('#access').toggleClass('is-hidden');
         return false; 
       });
 

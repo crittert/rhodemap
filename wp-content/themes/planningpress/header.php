@@ -48,6 +48,10 @@
 
   <link rel="profile" href="http://gmpg.org/xfn/11" />
 
+  <!-- Google Web ss -->
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700,700italic|Hammersmith+One|Merriweather:400italic,400,700,900,900italic,700italic|Roboto+Slab:700,300' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="screen, projection" />
   <link rel="stylesheet" type="text/css" media="print" href="<?php bloginfo( 'stylesheet_directory' ); ?>/print.css" />
 
@@ -85,16 +89,16 @@
   <div id="page" class="hfeed">
     <header id="branding" role="banner" class="clearfix">
       <hgroup id="site-marquee">
-        <h1 id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-        <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+        <h1 id="site-title"><span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/ri-logo.png"></a></span></h1>
+        <h2 id="site-description" class="is-visuallyhidden"><?php bloginfo( 'description' ); ?></h2>
       </hgroup>
 
-      <div class="skip-link visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'planningpress' ); ?>"><?php _e( 'Skip to content', 'planningpress' ); ?></a></div>
+      <div class="skip-link is-screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'planningpress' ); ?>"><?php _e( 'Skip to content', 'planningpress' ); ?></a></div>
       <nav id="utility" role="article">
         <?php wp_nav_menu( array( 'theme_location' => 'utility', 'fallback_cb' => false ) ); ?>
       </nav><!-- #utility -->
-      <a href="#" id="nav-bttn">&equiv;</a>
-      <nav id="access" role="article">
+      <a href="#" id="nav-bttn"><span class="icon">&equiv;</span><span class="prompt"> Menu</span></a>
+      <nav id="access" role="article" class="is-hidden">
         <?php wp_nav_menu( array( 'theme_location' => 'header', 'fallback_cb'    => false ) ); ?>
       </nav><!-- #access -->
 
