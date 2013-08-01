@@ -93,7 +93,7 @@
         <h2 id="site-description" class="is-visuallyhidden"><?php bloginfo( 'description' ); ?></h2>
       </hgroup>
 
-      <div class="skip-link is-screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'planningpress' ); ?>"><?php _e( 'Skip to content', 'planningpress' ); ?></a></div>
+      <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'planningpress' ); ?>"><?php _e( 'Skip to content', 'planningpress' ); ?></a></div>
       <nav id="utility" role="article">
         <?php wp_nav_menu( array( 'theme_location' => 'utility', 'fallback_cb' => false ) ); ?>
       </nav><!-- #utility -->

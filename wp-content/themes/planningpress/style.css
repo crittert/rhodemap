@@ -49,7 +49,7 @@ ul.unstyled-list li, ol.unstyled-list li, nav ul li, nav ol li {
   padding-bottom: 0;
 }
 strong {
-  font-weight: 800;
+  font-weight: 900;
 }
 hr {
   margin: 1.5em 0;
@@ -115,7 +115,7 @@ textarea {
 /* Hide for both screenreaders and browsers */
 .is-hidden { display: none; visibility: hidden; }
 /* Hide only visually, but have it available for screenreaders */
-.is-screen-reader-text,
+.screen-reader-text,
 .is-visuallyhidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -170,6 +170,7 @@ body {
 #site-title a { display: block; }
 #site-title img { display: block; }
 #site-description {}
+#branding #searchform { display: none; }
 
 /* Utility Menu */
 #utility {
@@ -326,14 +327,25 @@ body {
 
 @media only screen and (min-width: 1024px) {
   #primary {
-    float: left; 
+    float: right; 
     width: 65%;
   }
   #content {}
   #secondary {
-    float: right;
+    float: left;
     clear: right;
     width: 30%;
+  }
+  body.home #primary, 
+  body.home #secondary {
+    width: 47.5%;
+    float: left;
+  }
+  #branding #searchform { 
+    display: block; 
+    float: right;
+    margin-top: 2.5em;
+    padding-top: 29px;
   }
   #utility { margin-top: 20px; }
   #access { left: auto; }
@@ -344,9 +356,6 @@ body {
   #access li a {
     padding-left: 1.5em;
     padding-right: 1.5em;
-  }
-  body.home #primary, body.home #secondary {
-    width: 47.5%;
   }
   #frontpage-widgets {
     float: right;
