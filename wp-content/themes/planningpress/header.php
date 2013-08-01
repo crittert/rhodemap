@@ -126,9 +126,9 @@
     </nav><!-- #sidebar-nav -->
     <?php } ?>
 
-    <?php if ( is_front_page() && is_active_sidebar('above-frontpage') ) : ?>
-    <div id="above-frontpage" class="widget-area">
-      <?php if ( ! dynamic_sidebar( 'above-frontpage' ) ) : ?>
+    <?php if ( is_front_page() && is_active_sidebar('frontpage-widgets') ) : ?>
+    <nav id="frontpage-widgets" class="widget-area clearfix">
+      <?php if ( ! dynamic_sidebar( 'frontpage-widgets' ) ) : ?>
       <?php endif; ?>
-    </div><!-- #above-frontpage .widget-area -->
+    </nav><!-- #frontpage-widgets .widget-area -->
     <?php endif; ?>

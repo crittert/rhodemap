@@ -106,8 +106,8 @@ function planningpress_widgets_init() {
   ) );
 
   register_sidebar( array (
-    'name' => __( 'Above Frontpage', 'planningpress' ),
-    'id' => 'above-frontpage',
+    'name' => __( 'Frontpage', 'planningpress' ),
+    'id' => 'frontpage-widgets',
     'before_widget' => '<aside id="%1$s" class="widget %2$s" role="complementary">',
     'after_widget' => "</aside>",
     'before_title' => '<h4 class="widget-title">',

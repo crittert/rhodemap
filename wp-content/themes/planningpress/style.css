@@ -237,6 +237,37 @@ body {
 /* =Content
 -------------------------------------------------------------- */
 
+/* Frontpage Widgets */
+#frontpage-widgets {
+  margin: -1em 0 2em;
+}
+#frontpage-widgets .callout {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 6em;
+  overflow: hidden;
+  margin-bottom: 0.25em;
+}
+#frontpage-widgets .callout a {
+  display: block;
+  font-size: 1.5em;
+  line-height: 2;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding: 2em 0.75em;
+  margin-top: -1em;
+}
+#frontpage-widgets .stream { background-image: url(images/ri-stream.png); }
+#frontpage-widgets .people { background-image: url(images/ri-people.png); }
+#frontpage-widgets .train { background-image: url(images/ri-train.png); }
+#frontpage-widgets .houses { background-image: url(images/ri-houses.png); }
+#frontpage-widgets .yellow a { box-shadow: inset 4em 0 7em #fdbe00; }
+#frontpage-widgets .green a { box-shadow: inset 4em 0 7em #a6b13b; }
+#frontpage-widgets .blue a { box-shadow: inset 4em 0 7em #4d9099; }
+#frontpage-widgets .violet a { box-shadow: inset 4em 0 7em #913451; }
 
 
 /* =Media Queries for Responsive Layout
@@ -283,19 +314,26 @@ body {
     left: 5%;
     padding-left: 340px;
   }
-  #access li {
+  #frontpage-widgets {
+    margin-bottom: 1em;
+  }
+  #frontpage-widgets .callout {
+    float: left;
+    width: 50%;
+    box-shadow: -0.25em 0 0 #fff;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #primary {
     float: left; 
-    max-width: 65%;
+    width: 65%;
   }
   #content {}
   #secondary {
     float: right;
-    max-width: 30%;
+    clear: right;
+    width: 30%;
   }
   #utility { margin-top: 20px; }
   #access { left: auto; }
@@ -306,6 +344,18 @@ body {
   #access li a {
     padding-left: 1.5em;
     padding-right: 1.5em;
+  }
+  body.home #primary, body.home #secondary {
+    width: 47.5%;
+  }
+  #frontpage-widgets {
+    float: right;
+    width: 47.5%;
+    margin-top: 0;
+  }
+  #frontpage-widgets .callout {
+    float: none;
+    width: 100%;
   }
 }
 

@@ -1368,7 +1368,7 @@ p.printer-friendly a {
 	border-left: 1px solid #ddd;
 }
 /* Above Frontpage Widget Area*/
-#above-frontpage .widget {
+#frontpage-widgets .widget {
   padding-bottom: 1em;
 	border-bottom: 1px solid #ddd;
 }
@@ -1647,13 +1647,13 @@ p.printer-friendly a {
     margin-bottom: 0;
   }
 
-  #above-frontpage {
+  #frontpage-widgets {
     float: right;
     float: left;
     margin: 0 -260px 0 -180px;
     width: 100%;
   }
-  #above-frontpage .widget {
+  #frontpage-widgets .widget {
     margin-left: 200px;
   }
 
