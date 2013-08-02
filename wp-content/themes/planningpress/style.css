@@ -238,6 +238,41 @@ body {
 /* =Content
 -------------------------------------------------------------- */
 
+/* Widgets */
+.widget { 
+  margin-bottom: 2em;
+}
+.widget ul { 
+  margin-left: 0em;
+  padding-left: 1.2em;
+}
+
+/* Custom Menu Widget */
+.widget_nav_menu {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  margin-bottom: 4em;
+}
+.widget_nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.widget_nav_menu li, .widget_nav_menu li {
+  margin-bottom: 1em;
+  padding-bottom: 0;
+}
+.widget_nav_menu a {
+  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+.widget_nav_menu .current-menu-item  a {
+  color: #444;
+}
+
 /* Frontpage Widgets */
 #frontpage-widgets {
   margin: -1em 0 2em;
