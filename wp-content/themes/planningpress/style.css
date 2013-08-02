@@ -271,6 +271,93 @@ body {
 #frontpage-widgets .violet a { box-shadow: inset 4em 0 7em #913451; }
 
 
+/* =Page Template: Media Tags
+-------------------------------------------------------------- */
+
+#media-tags-menu {
+  list-style: none;
+  margin: 1em 0;
+  padding: 1em 0 1em;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+#media-tags-menu li:first-child:before {
+  content: "Jump to: "; 
+  font-weight: bold;
+  font-size: 0.85em;
+} 
+#media-tags-menu li {
+  display: inline;
+  white-space: normal;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+#media-tags-menu li a {
+	background: #7aacb3;
+	color: #fff;
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  text-decoration: none;
+  padding: 0.25em 0.5em 0.125em 0.5em;
+  white-space: nowrap;
+}
+#media-tags-menu li a:hover {
+	background: #0d5d6f;
+	color: #fff;
+}
+div.media-tag {}
+.media-tag-base {
+  text-transform: capitalize;
+}
+.media-tag-name {
+  margin-bottom: 0;
+}
+.media-tag-description {
+}
+ul.media-tag-items {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+ul.media-tag-items li {
+}
+ul.media-tag-items a {
+  font-weight: 900;
+}
+.media-tag-item-description {
+  font-size: 0.85em;
+  padding-left: 24px;
+}
+
+/* mime types */ 
+ul.media-tag-items li .download-link {
+  background: url(images/document.png) left center no-repeat scroll; 
+  padding-left: 24px;
+  text-decoration: none;
+}
+ul.media-tag-items li .download-link .post-title {
+}
+ul.media-tag-items li .download-link .mime-type {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.7em;
+    color: #4573ff;
+}
+ul.media-tag-items li.image             .download-link { background-image: url(images/image.png); }
+ul.media-tag-items li.video             .download-link { background-image: url(images/film.png); }
+ul.media-tag-items li.application       .download-link { background-image: url(images/application.png); }
+ul.media-tag-items li.pdf               .download-link { background-image: url(images/document-pdf.png); }
+ul.media-tag-items li.msword            .download-link { background-image: url(images/document-word.png); }
+ul.media-tag-items li.x-tar             .download-link,
+ul.media-tag-items li.zip               .download-link,
+ul.media-tag-items li.x-gzip            .download-link { background-image: url(images/document-zipper.png); }
+ul.media-tag-items li.vnd-ms-powerpoint .download-link { background-image: url(images/document-powerpoint.png); }
+ul.media-tag-items li.vnd-ms-excel      .download-link { background-image: url(images/document-excel.png); }
+ul.media-tag-items li.text              .download-link,
+ul.media-tag-items li.rtf               .download-link { background-image: url(images/document-text.png); }
+ul.media-tag-items li.audio             .download-link { background-image: url(images/microphone.png); }
+ul.media-tag-items li.x-shockwave-flash .download-link { background-image: url(images/document-flash-movie.png); }
+
+
 /* =Media Queries for Responsive Layout
 -------------------------------------------------------------- */
 
