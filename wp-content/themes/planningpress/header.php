@@ -42,9 +42,17 @@
 
   <link media="screen" rel="stylesheet" href="<?php bloginfo( 'url' ); ?>/wp-content/themes/planningpress/colorbox/colorbox.css" />
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the images folder -->
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
-  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon.png"><!--60X60-->
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-precomposed.png">
+
+  <!-- Windows Start Screen Tiles -->
+  <meta name="application-name" content="<?php bloginfo( 'name' ); ?>"/>
+  <meta name="msapplication-TileColor" content="#ffffff"/>
+  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-144x144-precomposed.png"/>
 
   <link rel="profile" href="http://gmpg.org/xfn/11" />
 
