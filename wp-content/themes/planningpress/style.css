@@ -358,6 +358,71 @@ ul.media-tag-items li.audio             .download-link { background-image: url(i
 ul.media-tag-items li.x-shockwave-flash .download-link { background-image: url(images/document-flash-movie.png); }
 
 
+/* =Page Template: Events
+-------------------------------------------------------------- */
+
+h2.upcoming-events,
+h2.past-events {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+h2.past-events {
+  border-top: 1px solid #b7b7b7;
+  padding-top: 1em;
+}
+.no-past-events { display: none; }
+.events-list .hentry {
+  padding-bottom: 0.5em;
+  border-bottom: 0;
+}
+.event-header {
+  background: url(images/calendar-32.png) left top no-repeat scroll;
+  padding: 0 0 0 40px;
+  margin-bottom: 0.75em;
+}
+.event-header .entry-title {
+  font-size: 1.5em;
+  display: inline;
+  margin-right: 0.5em;
+}
+.event-header .entry-title a {
+  text-decoration: none;
+}
+.event-header .event-meta {
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  display: inline;
+}
+.event-tag {
+  color: white;
+  background-color: #777;
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  font-size: 85%;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25em 0.75em;
+  margin-right: 0.5em;
+  -webkit-border-radius: 100em;
+     -moz-border-radius: 100em;
+          border-radius: 100em;
+}
+.event-header .event-date-and-time {
+  display: block;
+  margin-left: -40px;
+}
+.event-header .event-date {}
+.event-header .dayofweek {}
+.event-header .dayofmonth {}
+.event-header .dayofmonth span {}
+.event-header .event-time {}
+.events-list .entry-content {}
+#content .events-list .entry-content p {
+  font-size: 0.85em;
+}
+.events-list .has-date .entry-content {}
+.events-list .permalink {}
+
+
 /* =Media Queries for Responsive Layout
 -------------------------------------------------------------- */
 

@@ -255,7 +255,7 @@ get_header(); ?>
                   endforeach;
 
                   else :
-                  echo "<p>There are no past events.</p>";
+                  echo '<h2 class="past-events no-past-events">There are no past events.</h2>';
                   endif;
 
                   ?>
