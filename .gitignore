@@ -6,6 +6,8 @@
 *.swp
 Thumbs.db
 
+wp-content/plugins/planningpress-plugins-master/
+
 # wordpress specific
 wp-config.php
 wp-content/uploads/
