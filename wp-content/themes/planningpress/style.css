@@ -238,6 +238,18 @@ body {
 /* =Content
 -------------------------------------------------------------- */
 
+.mindmixer-link {
+  color: #444;
+  background: #ffdfbf url(images/ri-utility-mindmixer.png) 10px center no-repeat scroll;
+  padding: 10px 10px 10px 45px;
+  display: block;
+  border: 2px solid #ff7f00;
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
 /* Widgets */
 .widget { 
   margin-bottom: 2em;
