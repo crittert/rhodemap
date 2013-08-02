@@ -268,6 +268,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   text-decoration: none;
+  text-align: left;
 }
 .widget_nav_menu .current-menu-item  a {
   color: #444;
