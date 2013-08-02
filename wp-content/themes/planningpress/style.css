@@ -193,7 +193,7 @@ body {
   overflow: hidden;
   text-indent: -9999px;
 }
-#utility .emailalerts a { width: 70px; background-image: url(images/ri-utility-emailalerts.png); }
+#utility .emailalerts a { width: 100px; background-image: url(images/ri-utility-emailalerts.png); }
 #utility .facebook a { background-image: url(images/ri-utility-facebook.png); }
 #utility .twitter a { background-image: url(images/ri-utility-twitter.png); }
 #utility .mindmixer a { background-image: url(images/ri-utility-mindmixer.png); }
