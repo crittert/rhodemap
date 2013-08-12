@@ -51,7 +51,7 @@ get_header(); ?>
                   <article id="post-<?php the_ID(); ?>" <?php post_class("clearfix"); ?> role="article">
                   <?php } ?>
                       <header class="event-header">
-                        <h3 class="entry-title"><a href="<?php the_permalink(); ?>" class="permalink"><?php the_title(); ?></a></h3>
+                        <h3 class="entry-title"><?php the_title(); ?></h3>
                         <div class="event-meta">
                         <?php 
                         $terms = wp_get_object_terms($post->ID, 'pprss_event_tag');
@@ -121,9 +121,6 @@ get_header(); ?>
                       <div class="entry-content clearfix">
                         <?php if ( has_excerpt() ) {
                           the_excerpt(); 
-                          ?> 
-                          <a href="<?php the_permalink(); ?>" class="permalink">More Details&hellip;</a>
-                          <?php 
                         } else {
                         the_content();  
                         ?>
@@ -167,7 +164,7 @@ get_header(); ?>
                   <article id="post-<?php the_ID(); ?>" <?php post_class("clearfix"); ?> role="article">
                   <?php } ?>
                       <header class="event-header">
-                        <h3 class="entry-title"><a href="<?php the_permalink(); ?>" class="permalink"><?php the_title(); ?></a></h3>
+                        <h3 class="entry-title"><?php the_title(); ?></h3>
                         <div class="event-meta">
                         <?php 
                         $terms = wp_get_object_terms($post->ID, 'pprss_event_tag');
@@ -239,9 +236,6 @@ get_header(); ?>
                       <div class="entry-content clearfix">
                         <?php if ( has_excerpt() ) {
                           the_excerpt(); 
-                          ?> 
-                          <a href="<?php the_permalink(); ?>" class="permalink">More Details&hellip;</a>
-                          <?php 
                         } else {
                         the_content();  
                         ?>

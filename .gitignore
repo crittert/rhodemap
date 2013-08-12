@@ -7,6 +7,7 @@
 Thumbs.db
 
 wp-content/plugins/planningpress-plugins-master/
+wp-content/plugins/widget-logic/
 
 # wordpress specific
 wp-config.php
