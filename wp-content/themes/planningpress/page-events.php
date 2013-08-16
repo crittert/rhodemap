@@ -134,7 +134,7 @@ get_header(); ?>
                   endforeach;
 
                   else :
-                  echo "<p>There are no upcoming events.</p>";
+                  echo "<p>Stay tuned!</p>";
                   endif;
 
                   ?>
