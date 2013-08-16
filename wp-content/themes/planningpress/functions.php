@@ -961,4 +961,51 @@ function my_template() {
 }
 
 add_action('template_redirect', 'my_template');
+
+
+/*
+ * add excerpts to pages
+ */
+
+add_action('init', 'page_excerpt_init');
+function page_excerpt_init() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+
+
+/*
+ * add taxonomy to pages
+ */
+
+add_action( 'init', 'create_page_taxonomies', 0 );
+function create_page_taxonomies() {
+ $labels = array(
+   'name' => _x( 'Page Tags', 'taxonomy general name' ),
+   'singular_name' => _x( 'Page Tag', 'taxonomy singular name' ),
+   'search_items' =>  __( 'Search Page Tags' ),
+   'popular_items' => __( 'Popular Page Tags' ),
+   'all_items' => __( 'All Page Tags' ),
+   'parent_item' => null,
+   'parent_item_colon' => null,
+   'edit_item' => __( 'Edit Page Tag' ),
+   'update_item' => __( 'Update Page Tag' ),
+   'add_new_item' => __( 'Add New Page Tag' ),
+   'new_item_name' => __( 'New Pge Tag' ),
+   'separate_items_with_commas' => __( 'Separate tags with commas' ),
+   'add_or_remove_items' => __( 'Add or remove tags' ),
+   'choose_from_most_used' => __( 'Choose from the most used tags' ),
+   'menu_name' => __( 'Page Tags' )
+ );
+
+ register_taxonomy('pprss_page_tag','page',array(
+   'hierarchical' => false,
+   'labels' => $labels,
+   'show_ui' => true,
+   'update_count_callback' => '_update_post_term_count',
+   'query_var' => true,
+   'rewrite' => array( 'slug' => 'tag' )
+ ));
+}
+
+
 ?>
