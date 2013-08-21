@@ -35,27 +35,9 @@ get_header(); ?>
 					    } ?>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'planningpress' ), 'after' => '</div>' ) ); ?>
+						<?php edit_post_link( __( 'Edit', 'planningpress' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-content -->
 
-					<footer class="entry-meta">
-						<?php
-							$tag_list = get_the_tag_list( '', ', ' );
-							if ( '' != $tag_list ) {
-								$utility_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'planningpress' );
-							} else {
-								$utility_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'planningpress' );
-							}
-							printf(
-								$utility_text,
-								get_the_category_list( ', ' ),
-								$tag_list,
-								get_permalink(),
-								the_title_attribute( 'echo=0' )
-							);
-						?>
-
-						<?php edit_post_link( __( 'Edit', 'planningpress' ), '<span class="edit-link">', '</span>' ); ?>
-					</footer><!-- .entry-meta -->
 				</article><!-- #post-<?php the_ID(); ?> -->
 
 				<nav id="nav-below" role="article">

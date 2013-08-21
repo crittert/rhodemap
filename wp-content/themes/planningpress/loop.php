@@ -42,20 +42,10 @@
 		<div class="entry-content clearfix">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'planningpress' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'planningpress' ), 'after' => '</div>' ) ); ?>
+			<?php edit_post_link( __( 'Edit', 'planningpress' ), '<p><span class="edit-link">', '</span></p>' ); ?>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 
-		<?php if ( !is_front_page() ){ ?><footer class="entry-meta">
-			<span class="cat-links-wrapper">
-			  <span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links"><?php _e( 'Posted in ', 'planningpress' ); ?></span><?php the_category( ', ' ); ?></span>
-			  <span class="meta-sep"> | </span>
-		  </span>
-			<?php the_tags( '<span class="tag-links-wrapper"><span class="tag-links">' . __( 'Tagged ', 'planningpress' ) . '</span>', ', ', '<span class="meta-sep"> | </span></span>' ); ?>
-			<span class="comments-link-wrapper">
-			  <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'planningpress' ), __( '1 Comment', 'planningpress' ), __( '% Comments', 'planningpress' ) ); ?></span>
-		  </span>
-			<?php edit_post_link( __( 'Edit', 'planningpress' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
-		</footer><!-- #entry-meta --><?php } ?>
 	</article><!-- #post-<?php the_ID(); ?> -->
 
 	<?php comments_template( '', true ); ?>

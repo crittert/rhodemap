@@ -91,9 +91,6 @@ textarea {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
   width: 100%;
-  border: 0.25em solid #a1cbcf;
-  padding: 0.5em;
-  outline: 0;
 }
 .input-block:focus,
 textarea:focus {
@@ -238,6 +235,172 @@ body {
 /* =Content
 -------------------------------------------------------------- */
 
+.hentry {}
+.hentry + .hentry {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 2px dotted #ccc;
+}
+.entry-meta {
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  color: #999;
+}
+.entry-meta a, .entry-meta a:active, .entry-meta a:visited { color: #999; }
+.entry-meta a:hover { color: #444; }
+.byline { display: none; }
+
+.edit-link a {
+  color: #a6b13b;
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Post Navigation */
+#nav-above, #nav-below {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#nav-above { display: none; }
+#nav-below { 
+  margin-top: 2em; 
+  margin-bottom: 2em; 
+  padding-top: 2em; 
+  border-top: 2px dotted #ccc;
+}
+.paged #nav-above { 
+  display: block; 
+  margin-bottom: 2em; 
+  padding-bottom: 2em; 
+  border-bottom: 2px dotted #ccc;
+}
+.nav-previous { float: left; }
+.nav-next { float: right; text-align: right; }
+.nav-previous, .nav-next { width: 50%; }
+.nav-previous a, .nav-next a {
+  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+	text-decoration: none;
+}
+.nav-previous a:hover, .nav-next a:hover {}
+
+/* Comments */
+#comments {}
+#comments-title, #reply-title {
+  font-size: 1.5em;
+  padding-top: 1.5em; 
+  border-top: 2px dotted #ccc;
+  clear: both;
+}
+.commentlist {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+.commentlist .children {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 3em;
+}
+li.comment {
+  padding: 0;
+  margin: 0;
+}
+li.comment + li.comment,
+.commentlist .children li.comment {
+  padding-top: 2em;
+  margin-top: 2em;
+  border-top: 2px dotted #ccc;
+}
+.commentlist .bypostauthor {}
+.comment header {
+	margin-bottom: 1.2em;
+	line-height: 1.4;
+}
+.comment-author,
+.comment-author cite {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.comment .avatar {
+  float: left;
+  margin-right: 1.2em;
+  margin-bottom: 1.2em;
+}
+.comment-meta {
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  color: #999;
+  font-weight: 100;
+}
+.comment-meta a, .comment-meta a:active, .comment-meta a:visited { 
+  color: #999; 
+  text-decoration: none;
+}
+.comment-meta a:hover { color: #444; }
+.comment-body { 
+  font-size: 0.85em;
+  clear: both;
+}
+.reply {}
+.commentlist .children .children .children .reply {
+  display: none;
+}
+.comment-reply-link {
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a6b13b;
+}
+.comment-reply-link:hover {}
+
+#respond input[type=text] {
+	float: left;
+	margin: 0 1em 0 0;
+	width: 60%;
+}
+#respond label {
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  color: #999;
+}
+#respond .comment-form-comment label {
+	display: none;
+}
+#respond textarea {
+	margin: 0 1em 1em 0;
+	float: left;
+	width: 80%;
+}
+#respond .form-allowed-tags { display: none; }
+#respond .form-allowed-tags code {}
+#respond .form-submit {
+  clear: left;
+}
+.comment-notes {
+  font-family: 'Hammersmith One', Arial, sans-serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  color: #999;
+}
+.required {
+  color: #ff7f00;
+}
+
+/* MindMixer */
 .mindmixer-link {
   color: #444;
   background: #ffdfbf url(images/ri-utility-mindmixer.png) 10px center no-repeat scroll;
